@@ -3,15 +3,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        System.out.print("Enter File Name");
+        System.out.print("Enter File Name: ");
         ReadFile file = new ReadFile();
         Scanner scanner = new Scanner(System.in);
         String string = scanner.next();
         try{ 
-            file.scan(string);
+            System.out.println(file.scan(string));
         }
         catch (FileNotFoundException e){
-            System.out.println("File Not Found" + e.getMessage());
+            System.out.println("File Not Found " + e.getMessage());
         }
         scanner.close();
     }
