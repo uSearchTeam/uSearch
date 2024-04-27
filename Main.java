@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        System.out.print("Enter File Name");
         ReadFile file = new ReadFile();
         Scanner scanner = new Scanner(System.in);
         String string = scanner.next();
-        System.out.print("Enter File Name");
         try{ 
             file.scan(string);
         }
