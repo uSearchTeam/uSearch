@@ -7,7 +7,11 @@ def getEasyApplyURL() -> list[str]:
     # Authenticate using any Linkedin account credentials
     email = input("Please enter LinkedIn email: ")
     password = input("Please enter LinkedIn password: ")
+<<<<<<< HEAD
     api = Linkedin(email, password) # CHANGE THIS TO GET INPUT
+=======
+    api = Linkedin('pypypypypythonv2@gmail.com', 'Escalier82') # CHANGE THIS TO GET INPUT
+>>>>>>> edd2675aa5e0b66ac338a2bd8b0d8cd133b1a7b7
 
 
     # Get job search parameters
