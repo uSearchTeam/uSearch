@@ -1,7 +1,5 @@
-from linkedin_api import Linkedin
-
-def getEasyApplyURL(api: Linkedin) -> list[str]:
-    """Takes input for the user about login information and job parameters and returns the URL of the matching LinkedIn EasyApply jobs found.
+def getEasyApplyURL(api) -> list[str]:
+    """Returns the URL of the matching EasyApply jobs found given the login LinkedIn api.
     """
 
     # Get job search parameters
