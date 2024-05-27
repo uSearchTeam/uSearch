@@ -1,18 +1,8 @@
 from linkedin_api import Linkedin
 
-def getEasyApplyURL() -> list[str]:
+def getEasyApplyURL(api: Linkedin) -> list[str]:
     """Takes input for the user about login information and job parameters and returns the URL of the matching LinkedIn EasyApply jobs found.
     """
-
-    # Authenticate using any Linkedin account credentials
-    email = input("Please enter LinkedIn email: ")
-    password = input("Please enter LinkedIn password: ")
-<<<<<<< HEAD
-    api = Linkedin(email, password) # CHANGE THIS TO GET INPUT
-=======
-    api = Linkedin('pypypypypythonv2@gmail.com', 'Escalier82') # CHANGE THIS TO GET INPUT
->>>>>>> edd2675aa5e0b66ac338a2bd8b0d8cd133b1a7b7
-
 
     # Get job search parameters
     p = []
